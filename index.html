@@ -60,8 +60,8 @@
 
 <div name="centerdown" class="center appdown">
     <a href="javascript:;" target="_blank">
-    <div class="banner">
-        <img src="images_01.jpg"  id="open_download" alt=""/>
+    <div class="banner" id="open_download">
+        <img src="images_01.jpg"   alt=""/>
         <img src="images_02.jpg" alt=""/>
         <img src="images_03.jpg" alt=""/>
         <img src="images_04.jpg" alt=""/>
@@ -86,8 +86,9 @@
         onready : function() {
             var m = this, button = document.getElementById("open_download");
             button.style.visibility = "visible";
-            m.schemeWakeup();
+            
             button.onclick = function() {
+				m.schemeWakeup();
                 m.wakeupOrInstall();
                 return false;
             }
