@@ -1,86 +1,90 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="./jquery-1.11.0.min.js"></script>
-    <link rel="Shortcut Icon" href="./icon_niuniu.png">
-    <title></title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: "Microsoft YaHei", "SimHei", "Arial", "Times New Roman";
-            font-size: 1.4rem;
-           # background-color:#422f28;
-        }
-        #warp{ width:80%; margin: 0 auto;}
-        .download {
-            position:relative;
-        }
-        .rule {
-            margin-top:20px;
-        }
-        .wz>p{
-            color:#FFFFFF;
-            margin-top:14px;
-            margin-bottom:14px;
-        }
-        .wz>p span{
-            padding-right:52px;
-            background-image:url('images/mj_flag.png');
-            background-repeat:no-repeat;
-            background-size:48px;
-            background-position:right center;
-        }
-        .xiazai {
-            padding-top: 56%;
-        }
-        .xiazai a {
-        		padding-top: 32.1875%;
-        }
-        .xiazai_ios a{
-            display:block;
-            background-image:url('niuniu_btn.png');
-            background-repeat:no-repeat;
-            background-size:100%;
-            background-position:center 0px;
-        }
-        .xiazai_az a{
-            display:block;
-            background-image:url('niuniu_btn.png');
-            background-repeat:no-repeat;
-            background-size:100%;
-            background-position:center 0px;
-        }
-        .wtips{
-        	position:absolute;
-        	left:0;
-        	top:0;
-        	background-color:rgba(0,0,0,0.65);
-        	width:100%;
-        	height:100%;
-        	z-index:100;
-        }
-        .wtips img{
-        	width:90%;
-        	margin:1% 5%;
-        }
-    </style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+    <title>众悦娱乐</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="pub_reset.css" type="text/css" rel="stylesheet">
+    <link href="buyu_mob.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-	<div>
-		<img src= "download.gif" id="download" style="width:100%">
+<body bgcolor="#FFFF90">
+<div id="weixin-tip"></div>
 
-	</div>
+<div name="RepairDiv" class="max_width" style="display: none;">
+<div class="wh_float">
+    <div class="wh_opacity" style="width:100%;height: 100%;"></div>
+</div>
+<div class="wh_float">
+    <div style="width:100%;height: 7%;"></div>
+    <div style="width:100%;height: 93%;"><img style="width:100%;height: 100%;" src="wh_main.htm"></div>
+</div>
+<div class="wh_float2">
+    <div style="width:100%;height: 6%;"><img style="height: 100%;margin-left:15%;margin-top: 1.3%;width:70%;float: left" src="wh_detail.htm">
+        <img style="height: 75%;width:7%;margin-left:1.2%;margin-top: 2.2%;float: left" src="wh_close.htm" alt="关闭" onclick="javascript:closeRepairHtml();">
+    </div>
+    <div style="width: 100%;height: 73%;"></div>
+    <div style="width: 100%;height: 20%;text-align: center;vertical-align: middle;"><img style="margin-top:6%;height:60%;width:5.4%;" src="wh_output.htm"></div>
+</div>
+</div>
+<div name="remarkDiv"  style="display: none;">
 
+
+    <div class="banner appdown">
+
+                <img src="index0.jpg" onclick="javascript:closeRemarkHtml();">
+                <br>
+                <a href="javascript:;"><img src="ios.jpg"></a>
+                <img src="index1.jpg">
+                <img src="img-0.jpg">
+                <img src="index2.jpg">
+                <img src="img-1.jpg">
+                <img src="index3.jpg">
+                <img src="img-2.jpg">
+                <img src="index4.jpg">
+                <img src="img-3.jpg">
+                <img src="index5.jpg">
+                <img src="img-4.jpg">
+                <img src="index6.jpg">
+                <img src="img-5.jpg">
+                <a href="embedded.htm"><img src="xinren.jpg"></a>
+    </div>
+
+
+</div>
+
+<div name="centerdown" class="center appdown">
+    <a href="javascript:;" target="_blank">
+    <div class="banner">
+        <img src="images_01.jpg"  id="open_download" alt=""/>
+        <img src="images_02.jpg" alt=""/>
+        <img src="images_03.jpg" alt=""/>
+        <img src="images_04.jpg" alt=""/>
+        <img src="images_05.jpg" alt=""/>
+        <img src="images_06.jpg" alt=""/>
+        <img src="images_07.jpg" alt=""/>
+        <img src="images_08.jpg" alt=""/>
+        <img src="images_09.jpg" alt=""/>
+        <img src="images_10.jpg" alt=""/>
+    </div>
+    </a>
+</div>
+
+
+<script src="jquery.js" type="text/javascript"> </script>
+<script src="pub_rem.js" type="text/javascript"> </script>
 <script type="text/javascript" src="openinstall.js"></script>
 <script type="text/javascript">
     var data = OpenInstall.parseUrlParams();
     new OpenInstall({
-        appKey : "ozunv4",
+        appKey : "aivb4r",
         onready : function() {
-            var m = this, button = document.getElementById("download");
+            var m = this, button = document.getElementById("open_download");
             button.style.visibility = "visible";
             m.schemeWakeup();
             button.onclick = function() {
@@ -92,84 +96,173 @@
 
 </script>
 
-
 <script>
 
-	function UrlParameters(){
-	    var urlIndex=window.location.href.indexOf("?");
-		if(urlIndex)
-		{
-		 var parameters=window.location.href.substring(urlIndex+1);
-		 if(parameters)
-		 {
-		    var arrayParam=parameters.split("&");  //参数数组
-			var index;var name;var value;
-		    for(var i=0;i<arrayParam.length;i++)
-			{
-			    index=arrayParam[i].indexOf("=");
-				name=arrayParam[i].substring(0,index);
-				value=arrayParam[i].substring(index+1);
-				this[name]=value;
-			}
-		 }
-		}			    
-	}
-	
-	function IsPC() {
-    var userAgentInfo = navigator.userAgent;
-    var Agents = ["Android", "iPhone",
-        "SymbianOS", "Windows Phone",
-        "iPad", "iPod"];
-    var flag = true;
-    for (var v = 0; v < Agents.length; v++) {
-        if (userAgentInfo.indexOf(Agents[v]) > 0) {
-            flag = false;
-            break;
+
+    function getUrlParam(name)
+    {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+    function loadRepairHtml(){
+        var repair = getUrlParam('repair');
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(isiOS && repair=='1'){
+            console.log('isiOS repair');
+            document.getElementsByName('RepairDiv')[0].style.display="block";
         }
     }
-    return flag;
-}
-	
-  function openApp(key,refresh) {  
-		var isrefresh = refresh; 
-		if(isrefresh == 1) {  
-		 return  
-		}  
-		window.location.href = 'agt-nn://?TableKey='+key;  
-		window.setTimeout(function () {  
-		     window.location.href += '&refresh=1'   
-		}, 500);
-  }  
+    function loadRemarkHtml(){
+        var uu = navigator.userAgent;
+        var misiOS = !!uu.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(misiOS){
+            document.getElementsByName('remarkDiv')[0].style.display="block";
+            document.getElementsByName('centerdown')[0].style.display="none";
+            document.getElementsByName('centerdown')[1].style.display="none";
+        }
+    }
+    function closeRemarkHtml(){
+        document.getElementsByName('remarkDiv')[0].style.display="none";
+        document.getElementsByName('centerdown')[0].style.display="block";
+        document.getElementsByName('centerdown')[1].style.display="block";
 
-  $(document).ready(function () {
-	
-	  $('.wz>p').css("font-size", $(window).width() * 0.86 * 0.66 * 0.1);
+    }
+    function closeRepairHtml(){
+        document.getElementsByName('RepairDiv')[0].style.display="none";
+    }
 
-	  var browser = {
-	      versions: function () {
-	          var u = navigator.userAgent, app = navigator.appVersion;
-	          return {//移动终端浏览器版本信息
-	              trident: u.indexOf('Trident') > -1, //IE内核
-	              presto: u.indexOf('Presto') > -1, //opera内核
-	              webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-	              gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-	              mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
-	              ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-	              android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-	              iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-	              iPad: u.indexOf('iPad') > -1, //是否iPad
-	              weixin: u.match(/MicroMessenger/i), //微信浏览器
-                  webApp: u.indexOf('Safari') == -1,  //是否web应该程序，没有头部与底部
-	              zhifubao: u.match(/AlipayClient/i)
-	          };
-	      }(),
-	      language: (navigator.browserLanguage || navigator.language).toLowerCase()
-	  };
-	  
-	  if (browser.versions.weixin) {
-		 $('#normal').hide();
-		 $('#wechat').show();
-		}
-  });
+    function is_showtip()
+    {
+        var u = navigator.userAgent.toLowerCase();
+        if(u.match(/MicroMessenger/i)
+          || u.match(/ QQ/i)
+          || u.match(/AlipayClient/i)
+          || (u.match(/AliApp/i) && !u.match(/ucbrowser/i))
+          || u.match(/YiXin/i)
+          || u.match(/liaobei/i)
+          || u.match(/xlmessenger/i))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    function is_showqrcode(argument) {
+        var p = navigator.platform;
+        if(p.indexOf("Win") == 0
+            || p.indexOf("Mac") == 0
+            || p.indexOf("Linux") == 0
+            || p == "X11")
+            return true;
+
+        return false;
+    }
+
+    function loadHtml()
+    {
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+        var div = document.createElement('div');
+        div.id = 'weixin-tip';
+        if (isAndroid) {
+            div.innerHTML = '<p><img src="live_weixin.png" alt="微信打开" style="max-width: 100%; height: auto;"/></p>';
+            console.log('isAndroid');
+        } else if (isiOS) {
+            div.innerHTML = '<p><img src="live_weixin_ios.png" alt="微信打开" style="max-width: 100%; height: auto;"/></p>';
+            console.log('isiOS');
+        }
+        document.body.appendChild(div);
+    }
+
+    function loadStyleText(cssText) {
+        var style = document.createElement('style');
+        style.rel = 'stylesheet';
+        style.type = 'text/css';
+        try
+        {
+            style.appendChild(document.createTextNode(cssText));
+        }
+        catch (e)
+        {
+            style.styleSheet.cssText = cssText; //ie9以下
+        }
+        var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+        head.appendChild(style);
+    }
+
+    function updateUrl(url,key){
+        var key= (key || 't') +'=';
+        var reg=new RegExp(key+'//d+');
+        var timestamp=+new Date();
+        if(url.indexOf(key)>-1)
+        {
+            return url.replace(reg,key+timestamp);
+        }else{
+
+                if(url.indexOf('/?')>-1){
+                    var urlArr=url.split('/?');
+                    if(urlArr[1]){
+                        return urlArr[0]+'?'+key+timestamp+'&'+urlArr[1];
+                    }else{
+                        return urlArr[0]+'?'+key+timestamp;
+                    }
+                }else{
+                    if(url.indexOf('#')>-1){
+                        return url.split('#')[0]+'?'+key+timestamp+location.hash;
+                    }else{
+                        return url+'?'+key+timestamp;
+                    }
+                }
+        }
+    }
+
+    function loadQRCode(config)
+    {
+        if(config==null){config={};}
+        if(config.width==null){config.width=100;config.height=100;}
+        if(config.height==null){config.height=100;}
+        if(config.maxScreen==null){config.maxScreen=1000;}
+        if(config.message==null){config.message="扫码手机访问";}
+
+        document.write('<style type="text/css">#qrocdeContainer{position: fixed;z-index: 999;bottom: 1.74rem;right: 0.2rem;width: 100%;hight:100%;}#qrcodeMessage{background:#fff;width:'+config.width+'px;padding:8px;text-align:center;float:right;}@media screen and (max-width: '+config.maxScreen+'px) {#qrocdeContainer{display:none;}}</style>')
+        var div = document.createElement('div');
+        div.id = 'qr_code';
+        div.innerHTML = '<div id="qrocdeContainer"><div id="qrcodeMessage"><div id="qrcode"></div><div><font size="4" color="red">'+config.message+'</font></div></div></div>';
+        $(function(){var content=document.location.href;   jQuery('#qrcode').qrcode({width:config.width,height:config.height,correctLevel:0,text:content});});
+
+        document.body.appendChild(div);
+    }
+
+    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.6); filter:alpha(opacity=60); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+
+    if (is_showtip())
+    {
+        loadHtml();
+        loadStyleText(cssText);
+    }
+
+    loadRepairHtml();
+    var m_list = document.getElementsByTagName("a");
+    len = m_list.length;
+    for (i = 0; i < len; i++) {
+        (function (index) {
+            m_list[index].addEventListener('click', function () {
+            loadRemarkHtml();
+            }, false);
+        })(i)
+    }
+
+    if (is_showqrcode())
+        loadQRCode({width:120,height:120});
+
 </script>
-<div id="cli_dialog_div"></div></body></html>
+</body>
+</html>
